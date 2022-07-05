@@ -179,7 +179,7 @@ def get_pipeline(
         num_round=50,
         max_depth=10,
         eta=0.2,
-        gamma=4,
+        gamma=6,
         min_child_weight=6,
         subsample=0.7,
         silent=0,
