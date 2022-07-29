@@ -177,7 +177,7 @@ def get_pipeline(
     xgb_train.set_hyperparameters(
         objective="reg:linear",
         num_round=50,
-        max_depth=10,
+        max_depth=12,
         eta=0.2,
         gamma=7,
         min_child_weight=6,
@@ -289,7 +289,6 @@ def get_pipeline(
             input_data,
         ],
         steps=[step_process, step_train, step_eval, step_cond],
-#        steps=[step_process, step_train, step_eval],
         sagemaker_session=sagemaker_session,
     )
     return pipeline
